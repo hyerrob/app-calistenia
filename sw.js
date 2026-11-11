@@ -1,7 +1,7 @@
 /* App Calistenia: guarda o app no aparelho para abrir sem internet. */
-var V = 'p60-v1';
+var V = 'p60-v2';
 var CORE = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png'];
-var VIDS = ["videos/01.mp4", "videos/02.mp4", "videos/03.mp4", "videos/04.mp4", "videos/05.mp4", "videos/06.mp4", "videos/07.mp4", "videos/08.mp4", "videos/09.mp4", "videos/10.mp4", "videos/11.mp4", "videos/12.mp4", "videos/13.mp4", "videos/14.mp4", "videos/15.mp4", "videos/16.mp4", "videos/17.mp4", "videos/18.mp4", "videos/19.mp4", "videos/20.mp4"];
+var VIDS = ["videos/01.mp4", "videos/02.mp4", "videos/03.mp4", "videos/04.mp4", "videos/05.mp4", "videos/06.mp4", "videos/07.mp4", "videos/08.mp4", "videos/09.mp4", "videos/10.mp4", "videos/11.mp4", "videos/12.mp4", "videos/13.mp4", "videos/14.mp4", "videos/15.mp4", "videos/16.mp4", "videos/17.mp4", "videos/18.mp4", "videos/19.mp4", "videos/20.mp4", "videos/21.mp4", "videos/22.mp4", "videos/23.mp4", "videos/24.mp4", "videos/25.mp4", "videos/26.mp4", "videos/27.mp4", "videos/28.mp4", "videos/29.mp4", "videos/30.mp4"];
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(V).then(function (c) { return c.addAll(CORE.concat(VIDS)); }).then(function () { return self.skipWaiting(); }));
